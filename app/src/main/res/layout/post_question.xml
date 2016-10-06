@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey">
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:fontFile="@string/Gotham_Bold"
+            android:text="DEBATE WITH BJP LEADERS | TOMORROW"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_40"
+                app:fontFile="@string/Gotham_Light"
+                android:text="Your Question?"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:text="POST"
+                android:textColor="@color/colorAccent"
+                app:fontFile="@string/Gotham_Bold"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/grey">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFile="@string/Gotham_Light"
+            android:textColor="@color/gray_40"
+            android:lineSpacingExtra="1.5dp"
+            android:textSize="15sp"
+            android:text="@string/very_long_text"
+            app:justifyText="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivUparrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/upvote_54" />
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:id="@+id/tvUpvote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivUparrow"
+                android:layout_toRightOf="@+id/ivUparrow"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray_40"
+                android:text="UP VOTE"
+                app:fontFile="@string/Gotham_Bold"
+                app:justifyText="false" />
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="20 Upvotes"
+                app:fontFile="@string/Gotham_Medium"
+                app:justifyText="false" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/grey">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFile="@string/Gotham_Light"
+            android:textColor="@color/gray_40"
+            android:textSize="15sp"
+            android:lineSpacingExtra="1.5dp"
+            android:text="@string/very_long_text2"
+            app:justifyText="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivUparrowsecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/upvote_active_54" />
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:id="@+id/tvVoted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivUparrowsecond"
+                android:layout_toRightOf="@+id/ivUparrowsecond"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:text="VOTED"
+                app:fontFile="@string/Gotham_Bold"
+                android:textColor="@color/colorAccent"
+                app:justifyText="false" />
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="1210 Upvotes"
+                app:fontFile="@string/Gotham_Medium"
+                app:justifyText="false" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/grey">
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/livephoto1"
+    android:weightSum="2"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="25dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMIT SHAH"
+            app:fontFile="@string/Gotham_Bold"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            app:fontFile="@string/Gotham_Book"
+            android:text="10pm | 23-10-2016"
+            android:textColor="@color/white" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:id="@+id/tvPostQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:fontFile="@string/Gotham_Bold"
+                android:text="POST A QUESTION"
+                android:textSize="12sp"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dp"
+                android:layout_toRightOf="@+id/tvPostQuestion"
+                android:src="@drawable/white_50" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

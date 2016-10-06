@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_polling_booth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.campaignar.smis.campaignar.Activity.PollingBoothActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="420dp">
+
+                <fragment
+                    android:id="@+id/map_fragment"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/floating_action_button_offset"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/map" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/info_container"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                app:elevation="2dp"
+                android:src="@drawable/ic_direction"
+                app:srcCompat="@android:drawable/ic_dialog_email" />
+
+            <LinearLayout
+                android:id="@+id/info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floating_action_button_offset"
+                android:layout_marginLeft="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="SURAT MAIN POLLING"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="12 min away"
+                    android:textColor="@color/colorAccent" />
+
+
+                <ImageView
+                    android:layout_width="280dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:src="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight=".5"
+                        android:gravity="center_vertical"
+                        android:text="View Other Polling Booths" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:src="@drawable/ic_keyboard_arrow_right_orange_600_36dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:floatingSearch_backgroundColor="@color/white"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        app:floatingSearch_leftActionMode="showSearch"
+        app:floatingSearch_searchHint="Search..."
+        app:floatingSearch_showSearchKey="false"
+        app:floatingSearch_suggestionsListAnimDuration="250" />
+
+
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:layout_width="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="30dp"
+        android:src="@drawable/gps"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

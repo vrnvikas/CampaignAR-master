@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/ivLiveDiscussion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/live_discussions_new"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/overlay"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:weightSum="6">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/play" />
+
+        </RelativeLayout>
+
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:text="DEBATE WITH BJP LEADERS"
+            android:textColor="@color/White"
+            app:fontFile="@string/Gotham_Bold"
+            android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/ivDividerLeft"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Live"
+                app:fontFile="@string/Gotham_Book"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivDividerLeft"
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/tvOnlineUser"
+                android:background="@color/grey" />
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:id="@+id/tvOnlineUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="10K Online"
+                app:fontFile="@string/Gotham_Book"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/ivDividerRight"
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/tvOnlineUser"
+                android:background="@color/grey" />
+
+            <ayar.oktay.advancedtextview.AdvancedTextView
+                android:id="@+id/tvShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/ivDividerRight"
+                android:layout_weight="1"
+                android:text="SHARE"
+                app:fontFile="@string/Gotham_Bold"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/tvShare"
+                android:src="@drawable/ic_share_small_new" />
+
+            <ImageView
+                android:id="@+id/ivDividerBottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvOnlineUser"
+                android:layout_margin="20dp"
+                android:src="@color/grey" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivDividerBottom">
+
+                <ayar.oktay.advancedtextview.AdvancedTextView
+                    android:id="@+id/tvPostQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="POST A QUESTION"
+                    app:fontFile="@string/Gotham_Bold"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:layout_toRightOf="@+id/tvPostQuestion"
+                    android:src="@drawable/white_54" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

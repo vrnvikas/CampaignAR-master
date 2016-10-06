@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="28dp"
+    android:paddingBottom="28dp"
+    android:background="@color/grey"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/cvProfile"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:civ_border="false"
+            android:src="@drawable/politician_one" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            app:fontFile="@string/Gotham_Bold"
+            android:text="ASSAM"/>
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:fontFile="@string/Gotham_Book"
+            android:textColor="@color/gray_40"
+            android:textSize="22sp"
+            android:text="Sarbananda Sonowal"/>
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:id="@+id/tvPrevios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            app:fontFile="@string/Gotham_Bold"
+            android:textSize="11sp"
+            android:textColor="@color/gray_40"
+            android:text="PREVIOUS"/>
+
+        <ayar.oktay.advancedtextview.AdvancedTextView
+            android:id="@+id/tvPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            app:fontFile="@string/Gotham_Book"
+            android:text="MP"/>
+
+    </LinearLayout>
+
+</LinearLayout>

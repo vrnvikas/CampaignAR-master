@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_discussions"
+            android:icon="@drawable/ic_discussions"
+            android:title="LIVE DISCUSSIONS IN 360" />
+        <item
+            android:id="@+id/nav_be_the_cm"
+            android:icon="@drawable/ic_cardboard"
+            android:title="BE THE CM" />
+        <item
+            android:id="@+id/nav_ar_history"
+            android:icon="@drawable/ic_ar"
+            android:title="AR HISTORY" />
+
+        <item
+            android:id="@+id/nav_interest"
+            android:icon="@drawable/ic_nterest"
+            android:title="YOUR INTERESTS" />
+
+        <item
+            android:id="@+id/nav_candidate"
+            android:icon="@drawable/ic_kyc"
+            android:title="KNOW YOUR CANDIDATE" />
+
+        <item
+            android:id="@+id/nav_polling_booth"
+            android:icon="@drawable/ic_pooling"
+            android:title="POLLING BOOTH" />
+
+        <item
+            android:id="@+id/nav_party"
+            android:icon="@drawable/ic_about"
+            android:title="OUR PARTY" />
+
+        <item
+            android:id="@+id/nav_video_gallery"
+            android:icon="@drawable/ic_gallery"
+            android:title="VIDEO AND GALLERY" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_donations"
+                android:title="DONATIONS" />
+            <item
+                android:id="@+id/nav_social_media"
+                android:title="SOCIAL MEDIA" />
+            <item
+                android:id="@+id/nav_join_us"
+                android:title="JOIN US" />
+
+        </menu>
+    </item>
+
+</menu>

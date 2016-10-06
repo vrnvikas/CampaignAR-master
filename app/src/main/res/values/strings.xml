@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">CampaignAR</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <array name="home_screen_list">
+        <item>LIVE DISCUSSIONS IN 360</item>
+        <item>“BE THE CM” VR EXPERIENCE</item>
+        <item>YOUR INTERESTS</item>
+        <item>KNOW YOUR CANDIDATE</item>
+        <item>POLLING BOOTH</item>
+        <item>OUR PARTY</item>
+        <item>VIDEO AND GALLERY</item>
+    </array>
+
+    <array name="icon_images_home_screen_list">
+        <item>@drawable/ic_message</item>
+        <item>@drawable/ic_cardboard</item>
+        <item>@drawable/ic_nterest</item>
+        <item>@drawable/ic_kyc</item>
+        <item>@drawable/ic_pooling</item>
+        <item>@drawable/ic_about</item>
+        <item>@drawable/ic_gallery</item>
+
+    </array>
+
+
+    <array name="images_list_gallary">
+        <item>@drawable/photo1</item>
+        <item>@drawable/photo2</item>
+        <item>@drawable/photo3</item>
+        <item>@drawable/photo4</item>
+        <item>@drawable/photo5</item>
+        <item>@drawable/photo6</item>
+    </array>
+
+    <array name="badges_names_list">
+        <item>SOCIALLY
+            RESPONSIBLE
+        </item>
+        <item>KNOWLEDGE
+            SEEKING
+        </item>
+        <item>BJP FOLLOWER</item>
+        <item>DEBATOR</item>
+        <item>IDEA CONTRIBUTOR</item>
+    </array>
+
+    <array name="badges_info_list">
+        <item>Complete 5 more AR
+            tasks.
+        </item>
+        <item>Read more articles
+            in the App.
+        </item>
+        <item>Joined BJP</item>
+        <item>Participate in 5
+            more debates.
+        </item>
+        <item>Completed all the
+            “Be The CM” tasks
+        </item>
+    </array>
+
+
+    <array name="images_live_discussion">
+        <item>@drawable/live_discussions_new</item>
+        <item>@drawable/livephoto1</item>
+        <item>@drawable/livephoto2</item>
+    </array>
+
+    <array name="images_interests">
+        <item>@drawable/agri_new</item>
+        <item>@drawable/buss_new</item>
+        <item>@drawable/edu_new</item>
+        <item>@drawable/health_new</item>
+    </array>
+
+    <array name="images_candidate">
+        <item>@drawable/politician_one</item>
+        <item>@drawable/politician_two</item>
+        <item>@drawable/politician_three</item>
+    </array>
+
+
+    <array name="images_video_gallary">
+        <item>@drawable/videos_one</item>
+        <item>@drawable/videos_two</item>
+        <item>@drawable/videos_three</item>
+        <item>@drawable/videos_one</item>
+        <item>@drawable/videos_two</item>
+    </array>
+
+    <array name="candidate_names">
+        <item>Sarbananda Sonowal</item>
+        <item>H. Raja</item>
+        <item>Adityanath</item>
+    </array>
+
+    <array name="candidate_state">
+        <item>ASSAM</item>
+        <item>TAMILNADU</item>
+        <item>UTTAR PRADESH</item>
+    </array>
+
+    <array name="candidate_rank">
+        <item>PRESIDENT AASU\nMLA</item>
+        <item>MLA</item>
+        <item>MP</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_polling_booth_maps">Map</string>
+    <string name="very_long_text">The Bharatiya Janata Party expresses its     deep concern over the ongoing agrarian     crisis in the country. Agriculture in India is     not merely an economic activity but also     a source of employment generation for     nearly two third of our population.</string>
+    <string name="very_long_text2">What development have you done since the last 2 years in our panchayat? Please mension the promisses you have achieved?</string>
+    <string name="Gotham_Bold">fonts/Gotham-Bold.otf</string>
+    <string name="Gotham_Black">fonts/Gotham-Black.otf</string>
+    <string name="Gotham_Book">fonts/Gotham-Book.otf</string>
+    <string name="Gotham_Light">fonts/Gotham-Light.otf</string>
+    <string name="Gotham_Medium">fonts/Gotham-Medium.otf</string>
+    <string name="Gotham_thin">fonts/Gotham-Thin.otf</string>
+    <string name="dummy_text_one">The Bharatiya Janata Party expresses its deep concern over the ongoing agrarian crisis in the country. Agriculture in India is not merely an economic activity but also a source of employment generation for nearly two third of our population.</string>
+    <string name="dummy_text_two">The UPA Government’s inability to respond quickly and adequately against the challenges posed by the ongoing crisis has put livelihoods of our farmers in jeopardy. India needs an economic model based on equitable growth which doesn’t create huge income disparities.</string>
+    <string name="text_dummy_initiatives_one">Enhanced compensation for distressed farmers due to crop damage</string>
+    <string name="Gotham_Italic">fonts/Gotham-BookItalic.otf</string>
+
+</resources>
