@@ -29,7 +29,7 @@ public class LiveDiscussions extends BaseActivity
 
             currentFragment = FragmentLiveDiscussion.newInstance();
 
-//            currentFragment.setArguments(getIntent().getExtras());
+            currentFragment.setArguments(getIntent().getExtras());
 
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.fragment_container, currentFragment).commit();
@@ -39,23 +39,23 @@ public class LiveDiscussions extends BaseActivity
 
     @Override
     public void onLoadFramentPostQuestion() {
-//        Fragment newFragment = FragmentPostQuestion.newInstance("","");
-//        getSupportFragmentManager().beginTransaction()
-//                .add(newFragment, "RING_SPECS")
-//                .addToBackStack(null)
-//                .replace(R.id.fragment_container, newFragment)
-//                .commit();
-//        currentFragment = newFragment;
+        Fragment newFragment = FragmentPostQuestion.newInstance("","");
+        getSupportFragmentManager().beginTransaction()
+                .add(newFragment, "RING_SPECS")
+                .addToBackStack(null)
+                .replace(R.id.fragment_container, newFragment)
+                .commit();
+        currentFragment = newFragment;
     }
 
     @Override
     public void onLoadFragmentLiveDiscussion() {
-//        Fragment newFragment = FragmentLiveDiscussion.newInstance();
-//        getSupportFragmentManager().beginTransaction()
-//                .add(newFragment, "RING_SPECS")
-//                .addToBackStack(null)
-//                .replace(R.id.fragment_container, newFragment)
-//                .commit();
-//        currentFragment = newFragment;
+        Fragment newFragment = FragmentLiveDiscussion.newInstance();
+        getSupportFragmentManager().beginTransaction()
+                .add(newFragment, "RING_SPECS")
+                .addToBackStack(null)
+                .replace(R.id.fragment_container, newFragment)
+                .commit();
+        currentFragment = newFragment;
     }
 }

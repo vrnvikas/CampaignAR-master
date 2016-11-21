@@ -1,7 +1,9 @@
 package com.campaignar.smis.campaignar.Activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -37,16 +39,20 @@ public class HomeScreen extends AppCompatActivity
     private ImageView ivShare;
     private AdvancedTextView tvShare;
     private NavigationView navigationView;
+    private ImageView btnPlay;
+    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mContext = this;
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         recyclerView = (RecyclerView) findViewById(R.id.home_screen_recycler_view);
         badgesView = findViewById(R.id.badge_view);
         tvShare = (AdvancedTextView) findViewById(R.id.tvShare);
         ivShare = (ImageView) findViewById(R.id.ivShare);
+        btnPlay = (ImageView) findViewById(R.id.play);
         setSupportActionBar(toolbar);
         setTitle("");
         dataArray = getResources().getStringArray(R.array.home_screen_list);
@@ -56,14 +62,23 @@ public class HomeScreen extends AppCompatActivity
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         badgesView.setOnClickListener(this);
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                YouTubePlayerActivity.VIDEO_ID = "iYblfAJx22k";
+                startActivity(new Intent(mContext, YouTubePlayerActivity.class));
+            }
+        });
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.example.rajawalivuforiaexample");
+                if (launchIntent != null) {
+                    startActivity(launchIntent);//null pointer check in case package name was not found
+                }
             }
         });
 
@@ -166,7 +181,6 @@ public class HomeScreen extends AppCompatActivity
                 startActivity(intent);
                 break;
             case R.id.nav_ar_history:
-                startActivity(new Intent(this, SimplePlayerActivity.class));
                 break;
             case R.id.nav_interest:
                 startActivity(new Intent(this, YourInterests.class));

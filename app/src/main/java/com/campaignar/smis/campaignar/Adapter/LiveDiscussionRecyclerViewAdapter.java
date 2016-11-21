@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.campaignar.smis.campaignar.Activity.YouTubePlayerActivity;
 import com.campaignar.smis.campaignar.Fragments.FragmentLiveDiscussion;
 import com.campaignar.smis.campaignar.R;
 
@@ -95,17 +96,19 @@ public class LiveDiscussionRecyclerViewAdapter extends
 
     public class LiveDiscussionViewHolderHeader extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private ImageView imageView, ivShare;
+        private ImageView imageView, ivShare, livediscussplay;
         private TextView tvPostQuestion;
 
         public LiveDiscussionViewHolderHeader(View itemView) {
             super(itemView);
+            livediscussplay = (ImageView)itemView.findViewById(R.id.livediscussplay);
             imageView = (ImageView) itemView.findViewById(R.id.ivLiveDiscussion);
             tvPostQuestion = (TextView) itemView.findViewById(R.id.tvPostQuestion);
             ivShare = (ImageView) itemView.findViewById(R.id.ivShare);
 
             ivShare.setOnClickListener(this);
             tvPostQuestion.setOnClickListener(this);
+            livediscussplay.setOnClickListener(this);
 
 
         }
@@ -121,6 +124,10 @@ public class LiveDiscussionRecyclerViewAdapter extends
             }
             if (v.getId() == R.id.tvPostQuestion) {
                 mListener.onLoadFramentPostQuestion();
+            }
+            if (v.getId() == R.id.livediscussplay) {
+                YouTubePlayerActivity.VIDEO_ID = "RaZl64yR7Oc";
+                mContext.startActivity(new Intent(mContext, YouTubePlayerActivity.class));
             }
         }
 

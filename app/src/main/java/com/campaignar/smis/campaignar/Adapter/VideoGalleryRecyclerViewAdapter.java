@@ -67,6 +67,7 @@ public class VideoGalleryRecyclerViewAdapter extends
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    YouTubePlayerActivity.VIDEO_ID = "iYblfAJx22k";
                     getContext().startActivity(new Intent(getContext(), YouTubePlayerActivity.class));
                 }
             });
